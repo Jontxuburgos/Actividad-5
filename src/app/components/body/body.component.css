@@ -1,0 +1,18 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+.noticiaCaja {
+  max-width: 500px;
+  margin: 40px auto;
+  padding: 10px;
+  border: 2px solid black; 
+}
+
+img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }

@@ -1,0 +1,54 @@
+<div>
+  <div>
+    <label for="titulo">Titulo</label>
+    <input type="text" id="titulo" [(ngModel)]="title" /><br />
+    <div>
+      <div>
+        <label for="noticia">Noticia</label>
+        <input type="text" id="noticia" [(ngModel)]="newBody" /><br />
+      </div>
+      <div>
+        <label for="imagen">Imagen</label>
+        <input type="text" id="imagen" [(ngModel)]="url" /><br />
+      </div>
+
+      <div>
+        <label for="fecha">Fecha</label>
+        <input type="date" id="fecha" [(ngModel)]="date" /><br />
+      </div>
+      <div>
+        <button (click)="publicar()">Publicar</button>
+      </div>
+      <hr />
+      <h2>Ultimas publicaciones</h2>
+      <div>
+        <div class="noticiaCaja">
+          <h3>Preparada o no, hay quien está usando ChatGPT para hacer terapia psicológica</h3>
+            <p>Uno de los proyectos más interesantes que relaciona la inteligencia artificial y la 
+              psicología lo ha llevado a cabo Koko, una empresa que proporciona herramientas de ayuda.
+               Más concretamente, la misión de Koko es servir como primera línea de acción ante personas
+               que puedan necesitar recursos de salud mental. ¿Cómo lo hace? Si buscas la palabra "thinspo"
+               (un término que se usa para catalogar contenido que exalta los trastornos alimentarios)  en
+                plataformas como Pinterest, la empresa proporciona la tecnología para ofrecer al usuario un
+                 enlace a la página nacional de ayuda para trastornos alimentarios (de Estados Unidos).</p>
+                 <img src="https://i.blogs.es/d5e065/psico/1366_2000.webp">
+                 <p>11/02/2023</p>
+
+        </div>        <div class="noticiaCaja">
+          <h3>Arquitectura Zoom: cómo el teletrabajo está cambiando la forma en la que diseñamos las viviendas</h3>
+            <p>Desde que las restricciones para combatir el COVID-19 comenzaron a suavizarse, muchas empresas, 
+              que habían adoptado el teletrabajo para continuar su actividad durante lo más duro de la pandemia, 
+              han decidido retornar al tradicional presencialismo. Grandes compañías como Snap o Twitter  modificaron 
+              su política de trabajo a distancia, y recientemente Kastle Systems, una compañía de seguridad, comunicó 
+              que más de la mitad de los trabajadores registrados en su sistema estaba acudiendo a la oficina, una cifra 
+              que no se veía desde que comenzó la pandemia.</p>
+                 <img src="https://i.blogs.es/6298c1/teletrabajo-vivienda-1/1366_2000.jpeg">
+                 <p>11/02/2023</p>
+
+        </div>
+        <ul [innerHTML]="articulo" class="publicaciones">
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
