@@ -14,6 +14,13 @@ export class BodyComponent {
   articulo: string = '';
   arrNoticias: Noticia[] = [];
 
+  // constructor() {
+  //   this.arrNoticias = [
+  //     {titulo: 'Titulo noticia1', noticia: 'noticia 1', imagen:'imagen1', fecha:'fecha1'},
+  //     {titulo: 'Titulo noticia2', noticia: 'noticia 2', imagen:'imagen2', fecha:'fecha2'}
+  //   ]
+  // }
+
   cargarNoticia(): void {
     this.articulo = '';
     this.arrNoticias.forEach((noticiavar) => {
