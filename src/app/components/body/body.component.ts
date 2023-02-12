@@ -17,7 +17,17 @@ export class BodyComponent {
   cargarNoticia(): void {
     this.articulo = '';
     this.arrNoticias.forEach((noticiavar) => {
-      this.articulo += `<li> ${noticiavar.titulo} ${noticiavar.noticia} <img src="${noticiavar.imagen}"> ${noticiavar.fecha} </li>`;
+      this.articulo += `
+      <div class="noticiaCaja">
+        <h3>
+        ${noticiavar.titulo}
+        </h3>
+          <p class"cuerpo">
+          ${noticiavar.noticia}
+          </p>
+            <img src="${noticiavar.imagen}" />
+              <p class="fechaF">${noticiavar.fecha}</p>
+      </div>`;
     });
   }
 
@@ -42,7 +52,7 @@ export class BodyComponent {
       this.url = '';
       this.date = '';
     } else {
-      alert('HOLAA');
+      alert('Todos los campos deben estar rellenos');
     }
   }
 }

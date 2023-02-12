@@ -1,18 +1,40 @@
 * {
-    margin: 0;
-    padding: 0;
     box-sizing: border-box;
   }
 
-.noticiaCaja {
-  max-width: 500px;
-  margin: 40px auto;
-  padding: 10px;
-  border: 2px solid black; 
+.formContainer {
+  background-color: #bddee4;
+  display: flex;
+  justify-content: center;
+  max-width: 1080px;
+  margin: 20px auto;
+  border-radius: 5px;
+  text-align: left;
 }
 
-img {
-    width: 100%;
-    height: auto;
-    display: block;
-  }
+.formulario {
+  width: 900px;
+  padding: 10px;
+}
+
+.inputTitulo{
+  border:1px solid #ffffff;
+}
+
+.inputFecha{
+  border:1px solid #ffffff;
+}
+
+.inputNoticia {
+  width: 800px;
+  border:1px solid #ffffff;
+  margin: 5px 0px 5px 0px;
+  box-sizing: content-box;
+
+}
+
+.inputImagen {
+  width: 60%;
+  margin-bottom: 5px;
+  border:1px solid #ffffff;
+}
